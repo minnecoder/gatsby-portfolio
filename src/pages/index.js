@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Layout from '../components/layout';
-import Image from '../components/image';
-import SEO from '../components/seo';
-import Main from '../components/main';
-import About from '../components/about';
-import Projects from '../components/projects';
+import Layout from '../components/Layout';
+import Image from '../components/Image';
+import SEO from '../components/SEO';
+import Main from '../components/Main';
+import About from '../components/About';
+import Projects from '../components/Projects';
 
 const IndexPage = () => (
   <Layout>
