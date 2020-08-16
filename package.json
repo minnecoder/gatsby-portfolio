@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
+  "name": "gatsby-portfolio",
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Sean Parkin",
   "dependencies": {
     "gatsby": "^2.24.41",
+    "gatsby-cli": "^2.12.87",
     "gatsby-image": "^2.4.15",
     "gatsby-plugin-manifest": "^2.4.22",
     "gatsby-plugin-offline": "^3.2.23",
@@ -19,6 +19,12 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.0.8",
     "prettier": "2.0.5"
   },
   "keywords": [
