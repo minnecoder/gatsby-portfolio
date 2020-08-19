@@ -40,7 +40,7 @@ const projects = () => (
       return (
         <div id="work">
           <div>
-            <h1>Recent Work</h1>
+            <h1>Projects</h1>
 
             <div>
               {portfolioData.map(({ node }) => {
