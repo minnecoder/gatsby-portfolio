@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+// import './Home.css';
 
 export default function Home() {
   return (
-    <Main>
+    <Main id="home">
       <p>
         Hi, my name is Sean Parkin
         {' '}
@@ -15,8 +16,15 @@ export default function Home() {
 }
 
 const Main = styled.div`
+
 margin: 0;
 height: 100vh;
-// background: red;
-
+display: flex;
+align-items: center;
+  justify-content: center;
+> p {
+  font-size: 3.5rem;
+  // font-family: 'Red Rose', sans-serif;
+  // font-weight: bold;
+}
 `;

@@ -25,7 +25,7 @@ const Nav = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   z-index: 1;
   background: #fff;
   height: 60px;

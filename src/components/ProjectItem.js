@@ -31,6 +31,7 @@ ProjectItem.propTypes = {
 const Main = styled.div`
 display: flex;
 flex-direction: row-reverse;
+font-family: "Montserrat", sans-serif;
 margin-bottom: 2rem;
 width: 100%;
 `;

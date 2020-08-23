@@ -9,6 +9,7 @@ import Projects from '../components/Projects';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import './index.css';
 
 const IndexPage = () => (
   <StaticQuery
@@ -81,7 +82,7 @@ export default IndexPage;
 
 const Main = styled.div`
   display: flex;
-  
+ 
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
@@ -89,8 +90,11 @@ const Main = styled.div`
 `;
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+font-family: "Red Rose", sans-serif;
 body {
   margin: 0;
   // background: red;
+ 
 }
 `;

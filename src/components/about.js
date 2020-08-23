@@ -35,9 +35,11 @@ AboutPage.propTypes = {
 
 const About = styled.div`
   display: flex;
+  height: 100vh;
   flex-direction: column;
   padding: 60px 0;
-  font-family: "Poppins", sans-serif;
+  @import url('https:fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  font-family: "Montserrat", sans-serif;
   background: #fff;
 `;
 const AboutSection = styled.div`

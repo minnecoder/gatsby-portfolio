@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import ProjectItem from './ProjectItem';
 
@@ -38,7 +39,7 @@ const projects = () => (
       const portfolioData = data.allProjectsJson.edges;
       const portfolioImages = data.allFile.edges;
       return (
-        <div id="work">
+        <Main id="work">
           <div>
             <h1>Projects</h1>
 
@@ -50,10 +51,15 @@ const projects = () => (
               })}
             </div>
           </div>
-        </div>
+        </Main>
       );
     }}
   />
 );
 
 export default projects;
+
+const Main = styled.div`
+padding-top: 40px;
+font-family: "Montserrat", sans-serif;
+`;
