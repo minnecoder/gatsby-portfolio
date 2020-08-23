@@ -1,13 +1,67 @@
 import React from 'react';
-import Image from '../images/placeimg.jpg';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import SkillSection from './SkillsSection';
 
-export default function about() {
-  return (
-    <div>
-      <h2>About Me</h2>
-      {/* <div className="left"><Image /></div>  */}
+const AboutPage = ({ FEimages, BEimages, Toolimages }) => (
+  <About id="about">
+    <AboutSection>
+      <h1>About</h1>
+      <p>
+        Hi! My name is Sean Parkin I am a web developer that is based in
+        Minnesota. I make websites and web applications using JavaScript. I am
+        currently learning all of the things that React has to offer. React is
+        my go-to for web applications and use Gatsby for websites.
+      </p>
+    </AboutSection>
+    <SkillsSection>
+      <h2>Skills</h2>
+      <Skills>
+        <SkillSection title="Front End Skills" imgData={FEimages} />
+        <SkillSection title="Back End Skills" imgData={BEimages} />
+        <SkillSection title="Tools" imgData={Toolimages} />
+      </Skills>
+    </SkillsSection>
+  </About>
+);
 
-      <div className="right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt expedita unde eos numquam, debitis ut nam totam officia fuga mollitia commodi odit neque architecto maxime dolore distinctio quibusdam tenetur facilis reprehenderit dolores illo recusandae? Accusantium, vitae consequuntur reiciendis unde eligendi velit odit minus temporibus nostrum dolor pariatur, nemo quibusdam, exercitationem facilis magni autem! Minima cupiditate iusto commodi, eum earum voluptas inventore deserunt dolor maxime? Iure molestiae aperiam cupiditate quaerat id dolores itaque quidem consequuntur fuga eveniet asperiores, quisquam mollitia, nam doloribus debitis in distinctio maxime voluptatibus modi accusamus! Beatae voluptas molestiae, fugit quisquam fuga odio inventore error nisi tempore architecto.</div>
-    </div>
-  );
-}
+export default AboutPage;
+
+AboutPage.propTypes = {
+  FEimages: PropTypes.arrayOf(PropTypes.object).isRequired,
+  BEimages: PropTypes.arrayOf(PropTypes.object).isRequired,
+  Toolimages: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
+
+const About = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+`;
+const AboutSection = styled.div`
+  width: 70%;
+  margin: 0 auto;
+  > p {
+    padding: 20px;
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+`;
+const Skills = styled.div`
+  display: flex;
+  margin: 0 auto;
+ 
+`;
+const SkillsSection = styled.div`
+  margin: 0 auto;
+  > h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+`;

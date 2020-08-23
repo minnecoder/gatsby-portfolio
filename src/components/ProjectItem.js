@@ -32,10 +32,11 @@ const Main = styled.div`
 display: flex;
 flex-direction: row-reverse;
 margin-bottom: 2rem;
-border: solid 1px red;
+width: 100%;
 `;
 
 const Image = styled.div`
+width: 50%;
 img {
   height: 100%;
   width: 500px;
@@ -43,7 +44,7 @@ img {
 `;
 
 const Text = styled.div`
-
+width: 50%;
 
 `;
 
