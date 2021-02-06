@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import ProjectItem from './ProjectItem';
 
-const projects = () => (
+const Projects = () => (
   <StaticQuery
     query={graphql`
     {
@@ -57,7 +57,7 @@ const projects = () => (
   />
 );
 
-export default projects;
+export default Projects;
 
 const Main = styled.div`
 padding-top: 40px;

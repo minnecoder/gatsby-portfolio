@@ -69,7 +69,12 @@ const IndexPage = () => (
         <Helmet title="Sean Parkin" />
         <Home bgImage={data.bgImage} />
         <Header />
-        <About FEimages={data.front.edges} BEimages={data.back.edges} Toolimages={data.tools.edges} />
+
+        <About
+          FEimages={data.front.edges}
+          BEimages={data.back.edges}
+          Toolimages={data.tools.edges}
+        />
         <Projects />
         <Contact />
         <Footer />
