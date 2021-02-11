@@ -40,9 +40,8 @@ const Projects = () => (
       const portfolioImages = data.allFile.edges;
       return (
         <Main id="work">
-          <div>
+          <div className="container">
             <h1>Projects</h1>
-
             <div>
               {portfolioData.map(({ node }) => {
                 const image = portfolioImages.find((n) => n.node.relativePath === `projects/${node.img}`);
@@ -62,4 +61,15 @@ export default Projects;
 const Main = styled.div`
 padding-top: 40px;
 font-family: "Montserrat", sans-serif;
+background: #393e41;
+color: white;
+>.container{
+margin: 0 auto;
+width: 70%;
+
+> h1{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+}
 `;

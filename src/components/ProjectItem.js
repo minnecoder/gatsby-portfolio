@@ -33,7 +33,7 @@ display: flex;
 flex-direction: row-reverse;
 font-family: "Montserrat", sans-serif;
 margin-bottom: 2rem;
-width: 100%;
+${'' /* width: 100%; */}
 `;
 
 const Image = styled.div`
@@ -46,11 +46,11 @@ img {
 
 const Text = styled.div`
 width: 50%;
-
+padding: 0 2rem ;
 `;
 
 const Buttons = styled.div`
-
+padding: 1rem 0;
 
 
 `;
