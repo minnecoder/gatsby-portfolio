@@ -27,9 +27,10 @@ const Nav = styled.div`
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   z-index: 1;
-  background: #fff;
+  background: #26292c;
   height: 60px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+
 `;
 
 const Navbar = styled.div`
@@ -44,7 +45,7 @@ const LogoLink = styled(Link)`
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
-  color: #38384f;
+  color: white;
   padding-left: 4rem;
   
 `;
@@ -54,7 +55,7 @@ const Navlinks = styled.div`
 `;
 const Navlink = styled(Link)`
   text-decoration: none;
-  color: #38384f;
+  color: white;
   padding: 0 1.5rem;
   &:hover {
     border-bottom: 2px solid #18a4e0;

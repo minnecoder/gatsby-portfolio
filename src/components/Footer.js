@@ -18,7 +18,7 @@ export default Footer;
 const FooterSect = styled.div`
   height: 8vh;
   margin: 0;
-  background-color: #ddd;
+  background-color: #393e41;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -26,7 +26,7 @@ const FooterSect = styled.div`
   > p {
     text-align: center;
     margin: 0;
-    color: #38384f;
+    color: white;
     font-weight: bold;
     padding-top: 20px;
   }

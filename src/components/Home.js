@@ -21,9 +21,11 @@ margin: 0;
 height: 100vh;
 display: flex;
 align-items: center;
-  justify-content: center;
+justify-content: center;
+background: #393e41;
 > p {
   font-size: 3.5rem;
+  color: white;
   // font-family: 'Red Rose', sans-serif;
   // font-weight: bold;
 }
