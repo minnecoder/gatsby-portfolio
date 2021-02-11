@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "React",
+        "img": "React.png",
+        "type": "front"
+    },
+    {
+        "id": 2,
+        "name": "Gatsby",
+        "img": "Gatsby.png",
+        "type": "front"
+    },
+    {
+        "id": 3,
+        "name": "JavaScript",
+        "img": "JavaScript.png",
+        "type": "front"
+    },
+    {
+        "id": 4,
+        "name": "HTML5",
+        "img": "HTML.png",
+        "type": "front"
+    },
+    {
+        "id": 5,
+        "name": "CSS3",
+        "img": "CSS3.png",
+        "type": "front"
+    },
+    {
+        "id": 6,
+        "name": "NodeJS",
+        "img": "NodeJS.png",
+        "type": "back"
+    },
+    {
+        "id": 7,
+        "name": "Express",
+        "img": "ExpressJS.png",
+        "type": "back"
+    },
+    {
+        "id": 8,
+        "name": "MongoDB",
+        "img": "MongoDB.png",
+        "type": "database"
+    },
+    {
+        "id": 9,
+        "name": "PostgresSQL",
+        "img": "GitHub.png",
+        "type": "database"
+    },
+    {
+        "id": 10,
+        "name": "Git",
+        "img": "GitHub.png",
+        "type": "tool"
+    },
+    {
+        "id": 11,
+        "name": "Postman",
+        "img": "GitHub.png",
+        "type": "tool"
+    }
+]
