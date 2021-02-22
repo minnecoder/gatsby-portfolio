@@ -1,9 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  SiCss3, SiEslint, SiGatsby, SiGithub, SiHtml5, SiJavascript, SiMongodb, SiNodeDotJs, SiNodemon, SiPostgresql, SiPostman, SiReact, SiSwagger,
-} from 'react-icons/si';
-import { IconContext } from 'react-icons';
 
 const AboutPage = () => (
   <About id="about">
@@ -18,83 +14,7 @@ const AboutPage = () => (
     </AboutSection>
     <SkillsSection>
       <h2>Skills</h2>
-      <Skills>
-        <IconContext.Provider value={{ size: '5rem' }}>
-
-          <section>
-            <h3>Front End</h3>
-            <div className="skill-icons">
-              <div className="skill">
-                <SiCss3 />
-                <p> CSS3 </p>
-              </div>
-              <div className="skill">
-                <SiHtml5 />
-                <p>HTML</p>
-              </div>
-              <div className="skill">
-                <SiJavascript />
-                <p>JavaScript</p>
-              </div>
-              <div className="skill">
-                <SiReact />
-                <p>React</p>
-              </div>
-              <div className="skill">
-                <SiGatsby />
-                <p>Gatsby</p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3>Back End</h3>
-            <div className="skill-icons">
-              <div className="skill">
-                <SiNodeDotJs />
-                <p>NodeJs</p>
-              </div>
-              <div className="skill">
-                <SiSwagger />
-                <p>Swagger</p>
-              </div>
-              <div className="skill">
-                <SiNodemon />
-                <p>Nodemon</p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3>Database</h3>
-            <div className="skill-icons">
-              <div className="skill">
-                <SiMongodb />
-                <p>MongoDB</p>
-              </div>
-              <div className="skill">
-                <SiPostgresql />
-                <p>PostgreSQL</p>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3>Tools</h3>
-            <div className="skill-icons">
-              <div className="skill">
-                <SiGithub />
-                <p>GitHub</p>
-              </div>
-              <div className="skill">
-                <SiPostman />
-                <p>Postman</p>
-              </div>
-              <div className="skill">
-                <SiEslint />
-                <p>Eslint</p>
-              </div>
-            </div>
-          </section>
-        </IconContext.Provider>
-      </Skills>
+      <Skills />
     </SkillsSection>
   </About>
 );
