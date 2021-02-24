@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import SkillSection from './SkillSection';
 
-const AboutPage = () => (
+const AboutPage = (
+  {
+    FEimages, BEimages, DBimages, Timages,
+  },
+) => (
   <About id="about">
     <AboutSection>
       <h1>About</h1>
@@ -14,7 +19,12 @@ const AboutPage = () => (
     </AboutSection>
     <SkillsSection>
       <h2>Skills</h2>
-      <Skills />
+      <Skills>
+        <SkillSection title="Front End Skills" icons={FEimages} />
+        <SkillSection title="Back End Skills" icons={BEimages} />
+        <SkillSection title="Database Skills" icons={DBimages} />
+        <SkillSection title="Tools" icons={Timages} />
+      </Skills>
     </SkillsSection>
   </About>
 );
