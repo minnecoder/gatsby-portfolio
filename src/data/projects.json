@@ -12,10 +12,10 @@
     "id": "2",
     "name": "Issue Tracker",
     "description": "Full stack application for tracking issues for multiple projects",
-    "img": "react-from-scratch.png",
+    "img": "issue-tracker.png",
     "tech": "Node, Express, MongoDB, React",
     "github": "https://github.com/minnecoder/issue-tracker",
-    "website": "#"
+    "website": "https://issue-tracker-fullstack.herokuapp.com/#/tickets"
   },
   {
     "id": "3",
