@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Delivery Notes",
-    "description": "Full Stack app for notes on delivery route stops (username and password are 'demo' and 'password') ",
+    "description": "Full Stack app for notes on delivery route stops. Application is deployed on Heroku so may take a minute or two to load the first time. ",
     "img": "del-notes.png",
     "tech": "React, Node, Express, MongoDB, Mongoose, JWT, Axios",
     "github": "https://github.com/minnecoder/delivery-notes-fullstack/",
@@ -11,7 +11,7 @@
   {
     "id": "2",
     "name": "Issue Tracker",
-    "description": "Full stack application for tracking issues for multiple projects",
+    "description": "Full stack application for tracking issues for multiple projects. Application is deployed on Heroku so may take a minute or two to load the first time.",
     "img": "issue-tracker.png",
     "tech": "Node, Express, MongoDB, React",
     "github": "https://github.com/minnecoder/issue-tracker",
