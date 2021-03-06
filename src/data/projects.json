@@ -15,7 +15,7 @@
     "img": "issue-tracker.png",
     "tech": "Node, Express, MongoDB, React",
     "github": "https://github.com/minnecoder/issue-tracker",
-    "website": "https://issue-tracker-fullstack.herokuapp.com/#/tickets"
+    "website": "https://issue-tracker-fullstack.herokuapp.com/"
   },
   {
     "id": "3",

@@ -23,10 +23,13 @@ display: flex;
 align-items: center;
 justify-content: center;
 background: #393e41;
+
 > p {
   font-size: 3.5rem;
   color: white;
-  // font-family: 'Red Rose', sans-serif;
-  // font-weight: bold;
+  @media(max-width:420px) {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 `;

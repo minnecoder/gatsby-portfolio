@@ -11,10 +11,12 @@ const AboutPage = (
     <AboutSection>
       <h1>About</h1>
       <p>
-        Hi! My name is Sean Parkin I am a web developer that is based in
-        Minnesota. I make websites and web applications using JavaScript. I am
-        currently learning all of the things that React has to offer. React is
-        my go-to for web applications and use Gatsby for websites.
+        My name is Sean Parkin, I am full stack developer with a preference for the back end.
+      </p>
+
+      <p>
+        I enjoy making websites and web applications using JavaScript. I am
+        currently learning all of the things that React and Node has to offer.
       </p>
     </AboutSection>
     <SkillsSection>
@@ -59,6 +61,12 @@ const Skills = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
+
+  @media (max-width: 420px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: .5rem;
+  }
  
   .skill {
     padding: 0 .5rem;

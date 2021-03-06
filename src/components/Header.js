@@ -13,7 +13,7 @@ const Header = () => (
         <Navlink to="/#about">About</Navlink>
         <Navlink to="/#work">Portfolio</Navlink>
         <Navlink to="/#contact">Contact</Navlink>
-        <Navlink to="/blog">Blog</Navlink>
+        {/* <Navlink to="/blog">Blog</Navlink> */}
       </Navlinks>
     </Navbar>
   </Nav>
@@ -43,14 +43,18 @@ const Navbar = styled.div`
 
 const LogoLink = styled(Link)`
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: white;
   padding-left: 4rem;
-  
+  @media(max-width:420px) {
+    font-size: 1rem;
+    padding-left: 1rem; 
+  }
 `;
 const Navlinks = styled.div`
   padding-right: 4rem;
+  
  
 `;
 const Navlink = styled(Link)`
@@ -60,5 +64,7 @@ const Navlink = styled(Link)`
   &:hover {
     border-bottom: 2px solid #18a4e0;
   }
- 
+  @media (max-width: 420px) {
+    padding: 0 .25rem;
+  }
 `;
