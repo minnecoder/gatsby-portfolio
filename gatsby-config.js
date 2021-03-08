@@ -32,6 +32,14 @@ module.exports = {
     'gatsby-transformer-json',
     'gatsby-plugin-sharp',
     {
+      resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
+      options: {
+        analyzerMode: 'server',
+        analyzerPort: 3001,
+      },
+
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'gatsby-starter-default',
