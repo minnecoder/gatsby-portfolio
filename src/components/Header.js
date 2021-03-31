@@ -21,7 +21,7 @@ const Header = () => (
 
 export default Header;
 
-const Nav = styled.div`
+const Nav = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;

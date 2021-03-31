@@ -34,7 +34,7 @@ const Contact = () => (
 
 export default Contact;
 
-const ContactArea = styled.div`
+const ContactArea = styled.section`
   font-family: "Poppins", sans-serif;
   background: #26292c;
 `;

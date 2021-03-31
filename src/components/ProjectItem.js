@@ -28,7 +28,7 @@ ProjectItem.propTypes = {
   imgSrc: PropTypes.string.isRequired,
 };
 
-const Main = styled.div`
+const Main = styled.article`
 display: flex;
 flex-direction: row-reverse;
 font-family: "Montserrat", sans-serif;

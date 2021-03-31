@@ -15,7 +15,7 @@ const Footer = () => (
 
 export default Footer;
 
-const FooterSect = styled.div`
+const FooterSect = styled.footer`
   height: 8vh;
   margin: 0;
   background-color: #393e41;

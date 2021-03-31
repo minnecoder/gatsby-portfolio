@@ -41,7 +41,7 @@ const Projects = () => (
       return (
         <Main id="work">
           <div className="container">
-            <h1>Projects</h1>
+            <h2>Projects</h2>
             <div>
               {portfolioData.map(({ node }) => {
                 const image = portfolioImages.find((n) => n.node.relativePath === `projects/${node.img}`);
@@ -58,7 +58,7 @@ const Projects = () => (
 
 export default Projects;
 
-const Main = styled.div`
+const Main = styled.section`
 padding-top: 40px;
 font-family: "Montserrat", sans-serif;
 background: #393e41;
@@ -67,7 +67,7 @@ color: white;
 margin: 0 auto;
 width: 70%;
 
-> h1{
+> h2{
   text-align: center;
   padding-bottom: 1rem;
 }

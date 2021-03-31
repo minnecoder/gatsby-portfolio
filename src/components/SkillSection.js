@@ -29,5 +29,7 @@ padding: 0 0.5rem;
 img {
   display: block;
   margin: auto;
+  height: 48px;
+  width: 48px;
 }
 `;

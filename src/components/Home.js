@@ -15,7 +15,7 @@ export default function Home() {
   );
 }
 
-const Main = styled.div`
+const Main = styled.section`
 
 margin: 0;
 height: 100vh;

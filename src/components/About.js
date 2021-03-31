@@ -9,7 +9,7 @@ const AboutPage = (
 ) => (
   <About id="about">
     <AboutSection>
-      <h1>About</h1>
+      <h2>About</h2>
       <p>
         My name is Sean Parkin, I am full stack developer with a preference for the back end.
       </p>
@@ -20,7 +20,7 @@ const AboutPage = (
       </p>
     </AboutSection>
     <SkillsSection>
-      <h2>Skills</h2>
+      <h3>Skills</h3>
       <Skills>
         <SkillSection title="Front End Skills" icons={FEimages} />
         <SkillSection title="Back End Skills" icons={BEimages} />
@@ -33,7 +33,7 @@ const AboutPage = (
 
 export default AboutPage;
 
-const About = styled.div`
+const About = styled.section`
   display: flex;
   flex-direction: column;
   padding: 60px 0;
@@ -49,7 +49,7 @@ const AboutSection = styled.div`
     padding: 20px;
     font-size: 1.4rem;
   }
-  h1 {
+  h2 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
@@ -85,7 +85,7 @@ const Skills = styled.div`
 `;
 const SkillsSection = styled.div`
   margin: 0 auto;
-  > h2 {
+  > h3 {
     text-align: center;
     margin-bottom: 1rem;
   }
