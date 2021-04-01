@@ -86,6 +86,7 @@ const Skills = styled.div`
 const SkillsSection = styled.div`
   margin: 0 auto;
   > h3 {
+    font-size: 25px;
     text-align: center;
     margin-bottom: 1rem;
   }
