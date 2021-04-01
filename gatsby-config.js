@@ -40,6 +40,10 @@ module.exports = {
 
     },
     {
+      resolve: 'gatsby-plugin-styled-components',
+
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'gatsby-starter-default',
