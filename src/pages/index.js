@@ -21,7 +21,7 @@ const IndexPage = () => (
               name
               relativePath
               childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 64, height: 64) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -34,7 +34,7 @@ const IndexPage = () => (
               name
               relativePath
               childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 64, height: 64) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -47,7 +47,7 @@ const IndexPage = () => (
               name
               relativePath
               childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 64, height: 64) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -60,7 +60,7 @@ const IndexPage = () => (
               name
               relativePath
               childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 64, height: 64) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -76,7 +76,6 @@ const IndexPage = () => (
         <Home />
         <Header />
         <About
-
           FEimages={data.front.edges}
           BEimages={data.back.edges}
           DBimages={data.database.edges}
@@ -103,8 +102,8 @@ const Main = styled.div`
 `;
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
-font-family: "Red Rose", sans-serif;
+${'' /* @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+font-family: "Red Rose", sans-serif; */}
 body {
   margin: 0;
   // background: red;
