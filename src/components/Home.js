@@ -23,6 +23,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 background: #393e41;
+font-family: "Montserrat", sans-serif;
 
 > p {
   font-size: 3.5rem;
