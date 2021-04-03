@@ -27,6 +27,13 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: `${__dirname}/src/posts`,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-transformer-remark',
     'gatsby-transformer-json',
