@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import styled, { createGlobalStyle } from 'styled-components';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -14,6 +14,7 @@ export default function Template({ data }) {
       <Header />
       <Helmet title={`Sean Parkin - ${post.frontmatter.title}`} />
       <BlogPost>
+        <ReturnLink to="/blog">Back to Blogs</ReturnLink>
         <h1>{post.frontmatter.title}</h1>
         <h3>{post.frontmatter.date}</h3>
         <BlogPostContent dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -49,8 +50,11 @@ const BlogPost = styled.div`
   width: 80%;
   margin: 0 auto;
   padding: 12vh 8vh;
-  font-family: 'Poppins', sans-serif;
-  color: #38384f;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  > h1 {
+    margin-top: 2rem;
+  }
   > h3 {
     padding: 10px 0;
     font-style: italic;
@@ -58,12 +62,17 @@ const BlogPost = styled.div`
   
 `;
 
+const ReturnLink = styled(Link)`
+text-decoration: none;
+border: solid 2px #02aab0;
+padding: .75rem 1rem;
+color: white;
+`;
+
 const GlobalStyle = createGlobalStyle`
-${'' /* @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
-font-family: "Red Rose", sans-serif; */}
 body {
   margin: 0;
-  // background: red;
+  background: #393E41;;
  
 }
 `;
