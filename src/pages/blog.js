@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-// import media from '../components/media';
+import Media from '../components/Media';
 
 const BlogPage = ({ data }) => (
   <Main>
@@ -51,8 +51,8 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'Poppins', sans-serif;
-  color: #38384f;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
  
 `;
 
@@ -70,9 +70,8 @@ const Blog = styled.div`
 const BlogIndex = styled.div`
   width: 15%;
   height: 40%;
-  border-style: solid;
-  border-color: #d4d4d4;
   border-radius: 0.5rem;
+  background: #26292C;
   padding: 1rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -105,9 +104,8 @@ const BlogEntries = styled.div`
 `;
 
 const BlogEntry = styled.div`
-  border-style: solid;
-  border-color: #d4d4d4;
   border-radius: 0.5rem;
+  background: #26292C;
   padding: 1rem;
   margin-bottom: 2rem;
   width: 100%;
@@ -118,11 +116,9 @@ const BlogEntry = styled.div`
 `;
 
 const GlobalStyle = createGlobalStyle`
-${'' /* @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
-font-family: "Red Rose", sans-serif; */}
 body {
   margin: 0;
-  // background: red;
+  background: #393E41;
  
 }
 `;
