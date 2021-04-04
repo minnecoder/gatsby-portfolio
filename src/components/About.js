@@ -12,10 +12,8 @@ const AboutPage = (
       <h2>About</h2>
       <p>
         My name is Sean Parkin, I am full stack developer with a preference for the back end.
-      </p>
-
-      <p>
-        I enjoy making websites and web applications using JavaScript. I am
+        I enjoy making websites and web applications using JavaScript.
+        I continue to learn new things that are coming out in the industry. I am
         currently learning all of the things that React and Node has to offer.
       </p>
     </AboutSection>
