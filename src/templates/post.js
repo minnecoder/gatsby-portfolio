@@ -51,7 +51,7 @@ const BlogPost = styled.div`
   margin: 0 auto;
   padding: 12vh 8vh;
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  border-radius: 10px;
   > h1 {
     margin-top: 2rem;
   }
@@ -64,15 +64,16 @@ const BlogPost = styled.div`
 
 const ReturnLink = styled(Link)`
 text-decoration: none;
-border: solid 2px #02aab0;
+background: #FF5C31;
 padding: .75rem 1rem;
-color: white;
+color: black;
 `;
 
 const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
-  background: #393E41;;
+  background: #ffc331;
+  ${'' /* background: white; */}
  
 }
 `;

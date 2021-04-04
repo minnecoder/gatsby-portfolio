@@ -22,10 +22,10 @@ const Contact = () => (
           <FaLinkedin size={42} color="#0073b1" />
         </SocialLink>
         <SocialLink href="https://github.com/minnecoder">
-          <FaGithub size={42} color="white" background="fff" />
+          <FaGithub size={42} color="black" background="fff" />
         </SocialLink>
         <SocialLink href="mailto:sdparkin@gmail.com">
-          <FaEnvelope size={42} color="white" />
+          <FaEnvelope size={42} color="black" />
         </SocialLink>
       </SocialLinks>
     </ContactSect>
@@ -35,8 +35,8 @@ const Contact = () => (
 export default Contact;
 
 const ContactArea = styled.section`
-  font-family: "Poppins", sans-serif;
-  background: #26292c;
+  font-family: "Montserrat", sans-serif;
+
 `;
 const ContactSect = styled.div`
   width: 70%;
@@ -50,13 +50,11 @@ const ContactSect = styled.div`
     font-size: 20px;
     text-align: center;
     padding: 20px;
-    color: white;
   }
   h1 {
     font-size: 30px;
     text-align: center;
     padding: 20px;
-    color: white;
   }
 `;
 

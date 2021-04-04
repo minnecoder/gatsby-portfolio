@@ -31,8 +31,13 @@ ProjectItem.propTypes = {
 const Main = styled.article`
 display: flex;
 flex-direction: row-reverse;
+justify-content: center;
 font-family: "Montserrat", sans-serif;
 margin-bottom: 2rem;
+background: white;
+border-radius: 10px;
+padding: 2rem 0 2rem 5rem;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 @media (max-width:420px) {
   flex-direction: column;
 }
@@ -63,8 +68,8 @@ padding: 1rem 0;
 
 const Button = styled.a`
 text-decoration: none;
-color: #02aab0;
-border: solid 2px #02aab0;
+color: black;
+background: #FF5C31;
 padding: 8px 16px;
 margin-right: 1rem; 
 `;

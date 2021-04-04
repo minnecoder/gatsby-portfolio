@@ -71,54 +71,58 @@ const BlogIndex = styled.div`
   width: 15%;
   height: 40%;
   border-radius: 0.5rem;
-  background: #26292C;
+  background: white;
   padding: 1rem;
   margin-bottom: 2rem;
   text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   > h3 {
     padding: 10px 0;
+    color: black;
   }
 
 `;
 const IndexLink = styled(Link)`
-  color: #18a4e0;
+  color: #ff5c31;
   text-decoration: none;
   // margin: 2rem 0;
   &:hover {
-    color: #0253b3;
+    color: #ffc331;
   }
 `;
 
 const EntryLink = styled(Link)`
-  color: #18a4e0;
+  color:#FF5C31;
   text-decoration: none;
   &:hover {
-    color: #0253b3;
+    color: #FFC331;
   }
 `;
 
 const BlogEntries = styled.div`
   padding: 20px;
   width: 70%;
-  
+  color: black;
 `;
 
 const BlogEntry = styled.div`
   border-radius: 0.5rem;
-  background: #26292C;
+  background: white;
   padding: 1rem;
   margin-bottom: 2rem;
   width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   > p {
     padding: 0.7rem 0;
     font-style: italic;
+    color: black;
   }
 `;
 
 const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
-  background: #393E41;
+  background: #ffc331;
  
 }
 `;

@@ -18,15 +18,15 @@ export default Footer;
 const FooterSect = styled.footer`
   height: 8vh;
   margin: 0;
-  background-color: #393e41;
+  background-color: black;
+  color: white;
   width: 100%;
   position: absolute;
   bottom: 0;
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
   > p {
     text-align: center;
     margin: 0;
-    color: white;
     font-weight: bold;
     padding-top: 20px;
   }

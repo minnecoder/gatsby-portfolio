@@ -61,8 +61,7 @@ export default Projects;
 const Main = styled.section`
 padding-top: 50px;
 font-family: "Montserrat", sans-serif;
-background: #393e41;
-color: white;
+background: #ffc331;
 >.container{
 margin: 0 auto;
 width: 70%;

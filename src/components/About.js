@@ -39,8 +39,6 @@ const About = styled.section`
   padding: 60px 0;
   @import url('https:fonts.googleapis.com/css2?family=Montserrat&display=swap');
   font-family: "Montserrat", sans-serif;
-  background: #26292C;
-  color:white;
 `;
 const AboutSection = styled.div`
   width: 70%;
@@ -85,6 +83,10 @@ const Skills = styled.div`
 `;
 const SkillsSection = styled.div`
   margin: 0 auto;
+  background: #ffc331;
+  border-radius: 10px;
+  padding-left: 2rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   > h3 {
     font-size: 25px;
     text-align: center;
