@@ -28,6 +28,15 @@
   },
   {
     "id": "4",
+    "name": "Inventory Application API",
+    "description": "API that is used for the backend of an inventory application. The website that is linked is the documentation",
+    "img": "react-from-scratch.png",
+    "tech": "Node, TypeScript, Express, Sequelize",
+    "github": "https://github.com/minnecoder/inventory-api",
+    "website": "https://inventory-backend-api.herokuapp.com/api-docs/"
+  },
+  {
+    "id": "5",
     "name": "Frontend Mentor Intro Component with Signup",
     "description": "Recreation of the Frontend Mentor Intro Component with Signup. Made from the mockup that was provided, images were provided.",
     "img": "fm-intro.png",
@@ -36,7 +45,7 @@
     "website": "https://condescending-wescoff-0eec08.netlify.app/"
   },
   {
-    "id": "5",
+    "id": "6",
     "name": "Frontend Mentor Single Price Card",
     "description": "Recreation of the Frontend Mentor Single Price Card. Made from the mockup that was provided, images were provided.",
     "img": "fm-price.png",
