@@ -21,11 +21,13 @@ height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
-background: #FFC331;
+background: #415A77;
 font-family: "Montserrat", sans-serif;
+box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
 
 > p {
   font-size: 3.5rem;
+  color: #E0E1DD;
   @media(max-width:420px) {
     font-size: 2rem;
     text-align: center;

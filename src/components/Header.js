@@ -27,9 +27,9 @@ const Nav = styled.nav`
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   z-index: 1;
-  background: #26292c;
+  background: #0D1B2A;
   height: 60px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
 
 `;
 
@@ -45,7 +45,7 @@ const LogoLink = styled(Link)`
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  color: #E0E1DD;
   padding-left: 4rem;
   @media(max-width:420px) {
     font-size: 1rem;
@@ -59,7 +59,7 @@ const Navlinks = styled.div`
 `;
 const Navlink = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: #E0E1DD;
   padding: 0 1.5rem;
   &:hover {
     border-bottom: 2px solid #18a4e0;

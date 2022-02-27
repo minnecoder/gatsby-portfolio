@@ -81,7 +81,7 @@ const Skills = styled.div`
 `;
 const SkillsSection = styled.div`
   margin: 0 auto;
-  background: #ffc331;
+  background: #778DA9;
   border-radius: 10px;
   padding-left: 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);

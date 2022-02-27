@@ -4,27 +4,27 @@
     "name": "Delivery Notes",
     "description": "Full Stack app for notes on delivery route stops. Application is deployed on Heroku so may take a minute or two to load the first time. ",
     "img": "del-notes.png",
-    "tech": "React, Node, Express, MongoDB, Mongoose, JWT, Axios",
+    "tech": "React, TypeScript, Node, Express, MongoDB, Mongoose, JWT, ",
     "github": "https://github.com/minnecoder/delivery-notes-fullstack/",
-    "website": "https://notes-fullstack-demo.herokuapp.com/#/"
+    "website": "https://driver-notes.herokuapp.com//#/"
   },
   {
     "id": "2",
     "name": "Issue Tracker",
     "description": "Full stack application for tracking issues for multiple projects. Application is deployed on Heroku so may take a minute or two to load the first time.",
     "img": "issue-tracker.png",
-    "tech": "Node, Express, MongoDB, React",
+    "tech": "Node, TypeScript, Express, MongoDB, React",
     "github": "https://github.com/minnecoder/issue-tracker",
     "website": "https://issue-tracker-fullstack.herokuapp.com/"
   },
   {
     "id": "3",
     "name": "Delivery Application API",
-    "description": "API that is used to run multiple applications that would be used for a delivery company",
+    "description": "API that is used to run multiple applications that would be used for a delivery company. The website that is linked is the documentation",
     "img": "react-from-scratch.png",
-    "tech": "Node, Express, Sequelize",
+    "tech": "Node, TypeScript, Express, Sequelize",
     "github": "https://github.com/minnecoder/delivery-api",
-    "website": "#"
+    "website": "https://express-delivery-api.herokuapp.com/api-docs/"
   },
   {
     "id": "4",
