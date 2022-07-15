@@ -28,7 +28,7 @@ box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
 > p {
   font-size: 3.5rem;
   color: #E0E1DD;
-  @media(max-width:420px) {
+  @media(max-width:700px) {
     font-size: 2rem;
     text-align: center;
   }

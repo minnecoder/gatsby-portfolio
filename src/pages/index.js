@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
+
 import Header from '../components/Header';
 import Home from '../components/Home';
 import Projects from '../components/Projects';
@@ -9,9 +10,10 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
-const IndexPage = () => (
-  <StaticQuery
-    query={graphql`
+function IndexPage() {
+  return (
+    <StaticQuery
+      query={graphql`
     {
         
         front: allFile(filter: { relativeDirectory: { eq: "icons/front" } }) {
@@ -68,26 +70,26 @@ const IndexPage = () => (
         }
       }
     `}
-    render={(data) => (
-      <Main>
-        <GlobalStyle />
-        <Helmet title="Sean Parkin" />
-        <Home />
-        <Header />
-        <About
-          FEimages={data.front.edges}
-          BEimages={data.back.edges}
-          DBimages={data.database.edges}
-          Timages={data.tools.edges}
-        />
-        <Projects />
-        <Contact />
-        <Footer />
-      </Main>
-    )}
-  />
-
-);
+      render={(data) => (
+        <Main>
+          <GlobalStyle />
+          <Helmet title="Sean Parkin" />
+          <Home />
+          <Header />
+          <About
+            FEimages={data.front.edges}
+            BEimages={data.back.edges}
+            DBimages={data.database.edges}
+            Timages={data.tools.edges}
+          />
+          <Projects />
+          <Contact />
+          <Footer />
+        </Main>
+      )}
+    />
+  );
+}
 
 export default IndexPage;
 

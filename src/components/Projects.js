@@ -3,16 +3,17 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import ProjectItem from './ProjectItem';
 
-const Projects = () => (
-  <StaticQuery
-    query={graphql`
+function Projects() {
+  return (
+    <StaticQuery
+      query={graphql`
     {
         allFile(filter: { relativePath: { regex: "/projects/.*.(png|gif|jpeg|jpg)/" } }) {
           edges {
             node {
               relativePath
               childImageSharp {
-                fluid(maxWidth: 500) {
+                fluid(maxWidth: 800) {
                   src
                 }
               }
@@ -35,26 +36,27 @@ const Projects = () => (
     
     
     `}
-    render={(data) => {
-      const portfolioData = data.allProjectsJson.edges;
-      const portfolioImages = data.allFile.edges;
-      return (
-        <Main id="work">
-          <div className="container">
-            <h2>Projects</h2>
-            <div>
-              {portfolioData.map(({ node }) => {
-                const image = portfolioImages.find((n) => n.node.relativePath === `projects/${node.img}`);
-                const imgSrc = image.node.childImageSharp.fluid.src;
-                return <ProjectItem node={node} imgSrc={imgSrc} key={node.name} />;
-              })}
+      render={(data) => {
+        const portfolioData = data.allProjectsJson.edges;
+        const portfolioImages = data.allFile.edges;
+        return (
+          <Main id="work">
+            <div className="container">
+              <h2>Projects</h2>
+              <div>
+                {portfolioData.map(({ node }) => {
+                  const image = portfolioImages.find((n) => n.node.relativePath === `projects/${node.img}`);
+                  const imgSrc = image.node.childImageSharp.fluid.src;
+                  return <ProjectItem node={node} imgSrc={imgSrc} key={node.name} />;
+                })}
+              </div>
             </div>
-          </div>
-        </Main>
-      );
-    }}
-  />
-);
+          </Main>
+        );
+      }}
+    />
+  );
+}
 
 export default Projects;
 
