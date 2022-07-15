@@ -1,8 +1,6 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
-
 import Header from '../components/Header';
 import Home from '../components/Home';
 import Projects from '../components/Projects';
@@ -12,82 +10,16 @@ import Footer from '../components/Footer';
 
 function IndexPage() {
   return (
-    <StaticQuery
-      query={graphql`
-    {
-        
-        front: allFile(filter: { relativeDirectory: { eq: "icons/front" } }) {
-          edges {
-            node {
-              name
-              relativePath
-              childImageSharp {
-                fixed(width: 64, height: 64) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-          }
-        }
-        back: allFile(filter: { relativeDirectory: { eq: "icons/back" } }) {
-          edges {
-            node {
-              name
-              relativePath
-              childImageSharp {
-                fixed(width: 64, height: 64) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-          }
-        }
-        database: allFile(filter: { relativeDirectory: { eq: "icons/database" } }) {
-          edges {
-            node {
-              name
-              relativePath
-              childImageSharp {
-                fixed(width: 64, height: 64) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-          }
-        }
-        tools: allFile(filter: { relativeDirectory: { eq: "icons/tool" } }) {
-          edges {
-            node {
-              name
-              relativePath
-              childImageSharp {
-                fixed(width: 64, height: 64) {
-                  ...GatsbyImageSharpFixed
-                }
-              }
-            }
-          }
-        }
-      }
-    `}
-      render={(data) => (
-        <Main>
-          <GlobalStyle />
-          <Helmet title="Sean Parkin" />
-          <Home />
-          <Header />
-          <About
-            FEimages={data.front.edges}
-            BEimages={data.back.edges}
-            DBimages={data.database.edges}
-            Timages={data.tools.edges}
-          />
-          <Projects />
-          <Contact />
-          <Footer />
-        </Main>
-      )}
-    />
+    <Main>
+      <GlobalStyle />
+      <Helmet title="Sean Parkin" />
+      <Home />
+      <Header />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+    </Main>
   );
 }
 
@@ -103,11 +35,7 @@ const Main = styled.div`
 `;
 
 const GlobalStyle = createGlobalStyle`
-${'' /* @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
-font-family: "Red Rose", sans-serif; */}
 body {
   margin: 0;
-  // background: red;
- 
 }
 `;
