@@ -71,7 +71,8 @@ width: 70%;
 
 > h2{
   text-align: center;
-  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
 }
 }
 `;
